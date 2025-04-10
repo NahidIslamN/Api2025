@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django-Index</title>
+</head>
+
+
+<body>
+
+    <h1>Api Data</h1>
+
+    
+    {% for item in users %}
+    <h1>{{item.name}}</h1> 
+    <img width="50px" src="{{item.image}}" alt="Img" >
+    <hr>
+    {% endfor %}   
+</body>
+
+
+
+</html>
